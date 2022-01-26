@@ -144,7 +144,7 @@ class SafariBrowser(WebDriverBrowser):
     """Safari is backed by safaridriver, which is supplied through
     ``wptrunner.webdriver.SafariDriverServer``.
     """
-    def __init__(self, logger, binary, webdriver_binary, webdriver_args=None,
+    def __init__(self, logger, binary=None, webdriver_binary=None, webdriver_args=None,
                  port=None, env=None, kill_safari=False, **kwargs):
         """Creates a new representation of Safari.  The `webdriver_binary`
         argument gives the WebDriver binary to use for testing. (The browser
